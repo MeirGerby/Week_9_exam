@@ -19,9 +19,9 @@ def init_database():
         try:
             # Connect to MySQL server (without specifying database)
             connection = mysql.connector.connect(
-                host='mysql',
+                host='svc-mysql',
                 user='root',
-                password='rootpassword',
+                password='123456',
                 use_pure=True
             )
             cursor = connection.cursor()

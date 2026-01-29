@@ -12,9 +12,9 @@ def get_db_connection():
     """
     try:
         connection = mysql.connector.connect(
-            host='mysql',
+            host='svc-mysql',
             user='root',
-            password='rootpassword',
+            password='123456',
             database='classicmodels'
         )
         return connection

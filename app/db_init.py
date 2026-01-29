@@ -34,7 +34,7 @@ def init_database():
             cursor.execute("SET FOREIGN_KEY_CHECKS = 0")
             
             # Read and execute the SQL file
-            with open('/app/classicmodels.sql', 'r') as sql_file:
+            with open(r'/app/classicmodels.sql', 'r') as sql_file:
                 sql_script = sql_file.read()
             
             # Split and execute statements

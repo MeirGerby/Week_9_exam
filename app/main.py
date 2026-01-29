@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from db_init import init_database
+import uvicorn
 
 app = FastAPI()
 
@@ -40,3 +41,7 @@ def customer_quantity_per_order():
 @app.get("/q8/customers-payments-by-lastname-pattern")
 def customers_payments_by_lastname_pattern(pattern: str = "son"):
     pass
+
+
+if __name__ == "__main__":
+    uvicorn.run(app, host="localhost", port=3306)
